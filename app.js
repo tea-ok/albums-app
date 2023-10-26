@@ -14,8 +14,8 @@ const errorHandler = require("./middleware/errorHandler");
 const User = require("./models/User");
 
 const app = express();
-const PORT = 5000;
 dotenv.config();
+const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(
